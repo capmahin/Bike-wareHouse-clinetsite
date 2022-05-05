@@ -1,0 +1,57 @@
+[
+    {
+      "id": "1",
+      "img": "https://www.motorcyclesports.net/storage/uploads/2021/12/DUCATI_PANIGALE_V4S_STATIC_015_UC355533_Low-800x600-1.jpeg",
+      "name": "Ducati-999",
+      "description": "good",
+      "price": 122100,
+      "quantity": 1,
+      "SupplierName": ""
+    },
+    {
+      "id": "2",
+      "img": "https://motofomo.com/wp-content/uploads/2021/01/Ducati-Supersport-900SS-right-hand-side-1-1024x683.jpg",
+      "name": "Ducati-900",
+      "description": "good",
+      "price": 1345100,
+      "quantity": 1,
+      "SupplierName": ""
+    },
+    {
+      "id": "3",
+      "img": "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFybGV5JTIwZGF2aWRzb258ZW58MHx8MHx8&w=1000&q=80",
+      "name": "Harley-davidson",
+      "description": "good",
+      "price": 566100,
+      "quantity": 1,
+      "SupplierName": ""
+    },
+    {
+      "id": "4",
+      "img": "https://www.rushlane.com/wp-content/uploads/2021/08/new-royal-enfield-classic-350-launch-price-variants-colours-9-1200x900.jpg",
+      "name": "Royal-Enfield",
+      "description": "good",
+      "price": 100,
+      "quantity": 1,
+      "SupplierName": ""
+    },
+    {
+      "id": "5",
+      "img": "https://images.unsplash.com/photo-1597689609001-f4a3dc7195fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a2F3YXNha2klMjBuaW5qYXxlbnwwfHwwfHw%3D&w=1000&q=80",
+      "name": "Kawasaki-Ninja",
+      "description": "good",
+      "price": 989100,
+      "quantity": 1,
+      "SupplierName": ""
+    },
+    {
+      "id": "6",
+      "img": "https://images.unsplash.com/photo-1607187488541-0ee24bd99a73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a2F3YXNha2l8ZW58MHx8MHx8&w=1000&q=80",
+      "name": "Kawasaki",
+      "description": "good",
+      "price": 980100,
+      "quantity": 1,
+      "SupplierName": ""
+    }
+    
+  ]

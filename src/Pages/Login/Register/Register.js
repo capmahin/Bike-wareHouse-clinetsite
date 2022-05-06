@@ -39,7 +39,13 @@ const Register = () => {
           id=""
           placeholder="Your Password"
         />
-        <input type="submit" value="Register" />
+        <input type="checkbox" name="terms" id="terms" />
+        <label htmlFor="terms">Accept Terms and Condition</label>
+        <input
+          className="w-50 mx-auto btn btn-dark"
+          type="submit"
+          value="Register"
+        />
       </form>
       <p>
         Already Have an Account?{" "}

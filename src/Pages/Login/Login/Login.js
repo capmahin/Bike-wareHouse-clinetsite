@@ -94,7 +94,6 @@ const Login = () => {
       <p>
         Forget Password?{" "}
         <button
-          to="/register"
           className="btn btn-link text-dark pe-auto   text-decoration-none"
           onClick={resetPassword}
         >

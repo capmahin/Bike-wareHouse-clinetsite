@@ -6,7 +6,11 @@ import {
 } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import Loading from "../../Shared/Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const emailRef = useRef("");
@@ -21,6 +25,10 @@ const Login = () => {
     useSignInWithEmailAndPassword(auth);
 
   const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+  if (loading || sending) {
+    return <Loading></Loading>;
+  }
 
   if (user) {
     navigate(from, { replace: true });
@@ -42,8 +50,12 @@ const Login = () => {
 
   const resetPassword = async () => {
     const email = emailRef.current.value;
-    await sendPasswordResetEmail(email);
-    alert("Sent email");
+    if (email) {
+      await sendPasswordResetEmail(email);
+      toast("Sent email");
+    } else {
+      toast("Please enter your email");
+    }
   };
   return (
     <div className="container w-50 mx-auto">
@@ -81,25 +93,26 @@ const Login = () => {
       {errorElement}
       <p>
         Forget Password?{" "}
-        <Link
+        <button
           to="/register"
-          className="text-dark pe-auto text-decoration-none"
-          onClick={navigateRegister}
+          className="btn btn-link text-dark pe-auto   text-decoration-none"
+          onClick={resetPassword}
         >
           Reset Password
-        </Link>
+        </button>
       </p>
       <p>
         New to Bike Show?{" "}
         <Link
           to="/register"
           className="text-dark pe-auto text-decoration-none"
-          onClick={resetPassword}
+          onClick={navigateRegister}
         >
           Please Register
         </Link>
       </p>
       <SocialLogin></SocialLogin>
+      <ToastContainer />
     </div>
   );
 };

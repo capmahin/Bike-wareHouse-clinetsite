@@ -1,3 +1,22 @@
+*Bike House
+*its a warehouse Site
+*there are many bikes you can Book and Order
+*but You have to login here and also Register
+*and once u register you have just logion cause we have Login feature.
+*ourSite:[https://assignment-11-b1cef.web.app/]
+
+**use feature in site**
+**React-router
+**React-firebase-hooks
+**React-bootstrap
+**Bootstrap and vanilla CSS
+**Heroku
+**Server Site
+**mongodb
+**express
+**codes
+**dotenv
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -12,8 +12,8 @@ const Order = () => {
 
   useEffect(() => {
     const getOrders = async () => {
-      const email = user.email;
-      const url = `http://localhost:5000/order?email=${email}`;
+      const email = user?.email;
+      const url = `https://safe-cliffs-37248.herokuapp.com/order?email=${email}`;
       try {
         const { data } = await axiosPrivate.get(url);
         setOrders(data);
@@ -28,8 +28,16 @@ const Order = () => {
     getOrders();
   }, [user]);
   return (
-    <div>
+    <div className="text-center text-success">
       <h2>Your Order:{orders.length}</h2>
+      {orders.map((order) => (
+        <div>
+          <h3>
+            {order.email}: {order.service}
+          </h3>
+          <button className="btn btn-dark">Book</button>
+        </div>
+      ))}
     </div>
   );
 };

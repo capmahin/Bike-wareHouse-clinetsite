@@ -6,7 +6,7 @@ const ManageServices = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure");
     if (proceed) {
-      const url = `http://localhost:5000/service/${id}`;
+      const url = `https://safe-cliffs-37248.herokuapp.com/service/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -25,7 +25,12 @@ const ManageServices = () => {
         <div key={service._id}>
           <h5>
             {service.name}{" "}
-            <button onClick={() => handleDelete(service._id)}>X</button>
+            <button
+              className="btn btn-dark"
+              onClick={() => handleDelete(service._id)}
+            >
+              Cancel
+            </button>
           </h5>
         </div>
       ))}
